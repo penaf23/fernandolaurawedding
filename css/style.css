@@ -192,6 +192,7 @@ body {
 
 /* Main Title */
 .countdown-title {
+  
   font-size: clamp(
     1.5rem,
     6vw,
@@ -200,7 +201,7 @@ body {
   font-weight: 900;
   margin-bottom: 4rem;
   position: relative;
-  text-transform: uppercase;
+ 
   background: linear-gradient(
     to right,
     #3b82f6,
@@ -220,7 +221,7 @@ body {
   left: 0;
   top: 0;
   z-index: -1;
-  background: linear-gradient(to right, #3b82f6, #2563eb);
+  background: linear-gradient(to left, #3b82f6, #2563eb);
   -webkit-background-clip: text;
   color: transparent;
   filter: blur(20px);
