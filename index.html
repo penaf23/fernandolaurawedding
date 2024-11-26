@@ -1,0 +1,922 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fernando & Laura</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Free HTML Templates" name="keywords">
+    <meta content="Free HTML Templates" name="description">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baskervville:ital@0;1&family=Caveat:wght@400..700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:wght@300;500;700&family=Righteous&family=Roboto:wght@100;300;400;500;700&family=Sen:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="51">
+    <!-- Navbar Start -->
+
+<nav class="navbar fixed-top shadow-sm navbar-expand-lg navbar-dark py-3 py-lg-0 px-lg-5 gradient-navbar">
+    <a href="index.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="font-secondary text-white mb-n2">Laura <span class="text-primary">&</span> Fernando</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto py-0">
+            <a href="#home" class="nav-item nav-link active">Home</a>
+            <a href="#about" class="nav-item nav-link">About</a>
+            <a href="#story" class="nav-item nav-link">Story</a>
+            <a href="#gallery" class="nav-item nav-link">Gallery</a>
+        </div>
+        <a href="index.html" class="navbar-brand mx-5 d-none d-lg-block">
+            <h1 class="font-secondary text-white mb-n2">Laura<span class="text-primary">&</span>Fernando</h1>
+        </a>
+        <div class="navbar-nav mr-auto py-0">
+            <a href="#event" class="nav-item nav-link">Event</a>
+            <a href="#family" class="nav-item nav-link">Family</a>
+            <a href="#rsvp" class="nav-item nav-link">RSVP</a>
+            <a href="#contact" class="nav-item nav-link">Contact</a>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+
+<!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5 pb-5" id="home">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <!-- First Slide -->
+            <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                <img class="position-absolute w-100 h-100" src="img/carousel-1.jpg" style="object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Laura & Fernando </h1>
+                        <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                            <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                        </div>
+                        <button type="button" class="btn-play mx-auto" onclick="playVideo()">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Slide -->
+            <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                <img class="position-absolute w-100 h-100" src="img/carousel-2.jpg" style="object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h1 class="display-1 font-secondary text-white mt-n3 mb-md-4">Laura & Fernando</h1>
+                        <div class="d-inline-block border-top border-bottom border-light py-3 px-4">
+                            <h3 class="text-uppercase font-weight-normal text-white m-0" style="letter-spacing: 2px;">We're getting married</h3>
+                        </div>
+                        <button type="button" class="btn-play mx-auto" onclick="playVideo()">
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev justify-content-start" href="#header-carousel" data-slide="prev">
+            <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                <span class="carousel-control-prev-icon mt-3"></span>
+            </div>
+        </a>
+        <a class="carousel-control-next justify-content-end" href="#header-carousel" data-slide="next">
+            <div class="btn btn-primary px-0" style="width: 68px; height: 68px;">
+                <span class="carousel-control-next-icon mt-3"></span>
+            </div>
+        </a>
+    </div>
+</div>
+
+    
+<section id="countdown">
+    <div class="container text-center">
+      <h2 class="countdown-title">Countdown to the Big Day</h2>
+      <div id="countdown-timer" class="countdown-grid">
+        <div class="countdown-box">
+            <h1 id="days" class="timer-number">00</h1>
+            <p>Days</p>
+          </div>
+          <div class="countdown-box">
+            <h1 id="hours" class="timer-number">00</h1>
+            <p>Hours</p>
+          </div>
+          <div class="countdown-box">
+            <h1 id="minutes" class="timer-number">00</h1>
+            <p>Minutes</p>
+          </div>
+          <div class="countdown-box">
+            <h1 id="seconds" class="timer-number">00</h1>
+            <p>Seconds</p>
+          </div>
+          
+      <div class="animation-container">
+        <div class="rocket"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+        <div class="star"></div>
+      </div>
+    </div>
+  </section>
+  
+ 
+
+<script>
+    // Data do grande dia
+    const weddingDate = new Date("August 1, 2025 19:00:00").getTime();
+
+    // Atualize a contagem regressiva a cada segundo
+    const countdown = setInterval(() => {
+        const now = new Date().getTime();
+        const distance = weddingDate - now;
+
+        // Cálculos de dias, horas, minutos e segundos
+        const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+        // Exibir na página
+        document.getElementById("days").innerText = days;
+        document.getElementById("hours").innerText = hours;
+        document.getElementById("minutes").innerText = minutes;
+        document.getElementById("seconds").innerText = seconds;
+
+        // Quando a contagem termina
+        if (distance < 0) {
+            clearInterval(countdown);
+            document.getElementById("countdown-timer").innerHTML = "<h1>É hoje! 🎉</h1>";
+        }
+    }, 1000);
+</script>
+
+
+<!-- Hidden Fullscreen Video -->
+<div id="fullscreenVideoContainer" style="display: none;">
+    <video id="fullscreenVideo" width="100%" height="100%" controls>
+        <source src="img/us.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+<!-- Carousel End -->
+
+<!-- JavaScript for Fullscreen -->
+<script>
+    function playVideo() {
+        const videoContainer = document.getElementById('fullscreenVideoContainer');
+        const video = document.getElementById('fullscreenVideo');
+        
+        // Display the video container and play the video
+        videoContainer.style.display = 'block';
+        video.play();
+
+        // Request fullscreen mode
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) { /* Safari */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE11 */
+            video.msRequestFullscreen();
+        }
+
+        // Exit fullscreen and redirect when the video ends
+        video.onended = function () {
+            // Exit fullscreen mode if active
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) { /* Safari */
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) { /* IE11 */
+                document.msExitFullscreen();
+            }
+
+            // Hide the video container
+            videoContainer.style.display = 'none';
+
+            // Redirect to the homepage
+            window.location.href = '/';
+        };
+    }
+</script>
+
+
+
+
+    <!-- Video Modal Start -->
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>        
+                    <!-- 16:9 aspect ratio -->
+                    <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="" id="video"  allowscriptaccess="always" allow="autoplay"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Video Modal End -->
+
+
+<!-- About Start -->
+
+<div class="about-container" id="about">
+    <div class="container">
+        <!-- Section Title -->
+        <div class="text-center mb-5">
+            <span class="text-uppercase text-primary mb-3 d-block" style="letter-spacing: 3px;">About</span>
+            <h2 class="font-secondary display-4">Bride & Groom</h2>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+
+        <!-- Bride Section -->
+        <div class="row align-items-center mb-5">
+            <div class="col-lg-6">
+                <div class="profile-card">
+                    <div class="profile-image-container">
+                        <img class="profile-image" src="img/about-2.jpg" alt="Bride - Laura Kinsella">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="profile-card">
+                    <div class="profile-content">
+                        <!-- Irish Flag Watermark -->
+                        <img class="flag-watermark" src="img/ireland-flag.png" alt="Irish Flag">
+                        
+                        <h3>The Bride</h3>
+                        <div class="profile-text">
+                            <p class="baskervville-regular-italic">
+                                Hello, my favourite people!
+
+                                I'm Laura, the bride. This chapter of my life feels like a dream, and sharing it with you, the people who mean the world to me makes it even more extraordinary.
+                            </p>
+                            <p class="baskervville-regular-italic">
+                                I'm so deeply, endlessly in love with my fiancé. He is my rock, my greatest joy, and the one who turns every moment into magic. I feel blessed to have found someone who loves me unconditionally, who lifts me up in every way, and who inspires me to be the best version of myself every day.
+                            </p>
+                            <p class="baskervville-regular-italic">
+                                Thank you, from the very depths of my heart, for being a part of this once-in-a-lifetime adventure, for sharing in our joy, and for making this dream come true.
+                            </p>
+                            <p class="baskervville-regular-italic">
+                                With all my love and gratitude!
+                            </p>
+                        </div>
+                        
+                        <div class="profile-footer">
+                            <h4 class="font-secondary text-muted mb-4">
+                                <i class="fa fa-female text-primary pr-2"></i>Laura Kinsella
+                            </h4>
+                            <div class="social-links">
+                                <a class="social-link" href="https://www.facebook.com/laura.kinsella.750" target="_blank" rel="noopener">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social-link" href="https://www.instagram.com/laura.kinsella/" target="_blank" rel="noopener">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="social-link" href="https://www.linkedin.com/in/laura-kinsella-b156b2156/" target="_blank" rel="noopener">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Groom Section -->
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-2">
+                <div class="profile-card">
+                    <div class="profile-image-container">
+                        <img class="profile-image" src="img/about-1.jpg" alt="Groom - Fernando Pena">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 order-lg-1">
+                <div class="profile-card">
+                    <div class="profile-content">
+                        <!-- Brazilian Flag Watermark -->
+                        <img class="flag-watermark" src="img/brazil-flag.png" alt="Brazilian Flag">
+                        
+                        <h3>The Groom</h3>
+                        <div class="profile-text">
+                            <p class="baskervville-regular-italic">
+                                Hi, I'm Fernando, the lucky groom! Born and raised in Brazil, I've been shaped by a culture that celebrates life, love, and togetherness. Whether it's dancing, exploring new places, DJing or diving into my career as a developer, I've always tried to live with energy, creativity, and a sense of joy in every moment.
+                            </p>
+                            <p class="baskervville-regular-italic">
+                                Life has taught me that it's the connections we make and the love we share that matter most. Meeting Laura has been the most life-changing experience of all. She's my soulmate, my best friend, and my greatest inspiration. With her, every day feels brighter, every challenge easier, and every dream within reach. Together, we've built a relationship grounded in trust, laughter, and endless support, and I can't wait to take the next step in our journey as husband and wife.
+                            </p>
+                            <p class="baskervville-regular-italic">
+                                Let's come together to celebrate this unforgettable day, filled with laughter, joy, and so much love. I can't wait to see you all there and make memories we'll treasure forever!
+                            </p>
+                        </div>
+                        
+                        <div class="profile-footer">
+                            <h4 class="font-secondary text-muted mb-4">
+                                <i class="fa fa-male text-primary pr-2"></i>Fernando Pena
+                            </h4>
+                            <div class="social-links">
+                                <a class="social-link" href="https://www.facebook.com/fernandopena84/" target="_blank" rel="noopener">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a class="social-link" href="https://www.instagram.com/fernando_pena84/" target="_blank" rel="noopener">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a class="social-link" href="https://www.linkedin.com/in/fernando-pena22/" target="_blank" rel="noopener">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- About End -->
+    
+
+    <!-- Story Start -->
+    <div class="container-fluid py-5" id="story">
+        <div class="container pt-5 pb-3">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Story</h6>
+                <h1 class="font-secondary display-4">Our Love Story</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="container timeline position-relative p-0">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">First Meet</h4>
+                            <p class="text-uppercase mb-2">06 Jun 2021</p>
+                            <p class="baskervville-regular-italic">Our story began on a warm evening in Dublin, at Grand Canal Dock. 
+                                Laura was out for a walk, Fernando asked her to dance, and although Laura was shy at first, 
+                                his persistence paid off, and she finally said yes. That night, we danced for three hours 
+                                straight—and, in a way, we’ve been dancing ever since. As our journey unfolded, our 
+                                lives and cultures blended beautifully. From the warmth of Brazilian family gatherings to the charm of Irish 
+                                traditions, we've shared laughter, adventures, and countless dreams.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">First Date</h4>
+                            <p class="text-uppercase mb-2">30 Jul 2021</p>
+                            <p class="baskervville-regular-italic">Our first date was at Bah33 restaurant in Dublin, 
+                                a night that would forever be etched in our hearts. It was the first time Laura tried 
+                                Brazilian cuisine, a delightful introduction to a part of Fernando's culture and she 
+                                absolutely loved it. We spent the evening talking, laughing, and discovering how much 
+                                we had in common. Since that night, food and travelling have become a 
+                                big part of our relationship. We’ve shared countless unforgettable memories together 
+                                and we can't wait to share our biggest adventure yet with you!</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <img class="img-fluid mr-md-3" src="img/story-3.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 ml-md-3">
+                            <h4 class="mb-2">Proposal</h4>
+                            <p class="text-uppercase mb-2">26 Oct 2024</p>
+                            <p class="baskervville-regular-italic">On October 26, 2024, I asked Laura the most important question of my life: to spend the rest of her life by my side.
+                            It was a rainy night in Dublin, but the weather couldn’t dampen the magic of the moment. I chose the Grand Canal, 
+                            the very place where our paths first crossed, as the perfect setting for this life changing moment.
+                            It was an intimate and heartfelt evening, made even more special by Laura’s beautiful "yes," which filled me with 
+                            indescribable happiness. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-right">
+                        <div class="h-100 d-flex flex-column justify-content-center bg-secondary p-4 mr-md-3">
+                            <h4 class="mb-2">Engagement</h4>
+                            <p class="text-uppercase mb-2">26 Oct 2024</p>
+                            <p class="baskervville-regular-italic">After the proposal, we celebrated this unforgettable 
+                                milestone with a wonderful dinner, cherishing every moment of what would become one of 
+                                the most memorable nights of our lives. The rain, the location and the love we wouldn’t 
+                                have changed a single thing. Now, as we plan our wedding, surrounded by the love of family 
+                                and friends who’ve become an integral part of our story, we're eagerly looking forward to 
+                                celebrating our love. Together, we’ll keep dancing through life, hand in hand, ready for 
+                                whatever the future holds.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 text-center text-md-left">
+                        <img class="img-fluid ml-md-3" src="img/story-4.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Story End -->
+
+
+<!-- Gallery Start -->
+
+<div class="container-fluid bg-gallery" id="gallery">
+    <div class="section-title position-relative text-center">
+        <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Gallery</h6>
+        <h1 class="font-secondary display-4">Our Photos</h1>
+        <i class="far fa-heart text-dark"></i>
+    </div>
+    <div class="carousel">
+        <div class="list">
+            <div class="item" style="background-image: url(img/gallery-1.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/gallery-2.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/gallery-3.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/gallery-4.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/gallery-5.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/gallery-6.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/story-1.jpg);">
+                <div class="content">
+                </div>
+            </div>
+
+            <div class="item" style="background-image: url(img/story-2.jpg);">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/story-3.jpg);">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/story-4.jpg);">
+                <div class="content">
+                </div>
+            </div>
+            <div class="item" style="background-image: url(img/gallery.jpg);">
+                <div class="content">
+                </div>
+            </div>
+        </div>
+        <!--next prev button-->
+        <div class="arrows">
+            <button class="prev"><</button>
+            <button class="next">></button>
+        </div>
+        <!-- time running -->
+        <div class="timeRunning"></div>
+    </div>
+
+
+<!-- Gallery End -->
+
+
+    <!-- Event Start -->
+    <div class="container-fluid py-5" id="event">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Event</h6>
+                <h1 class="font-secondary display-4">Our Wedding Day</h1>
+                <h2 class="font-secondary display-4">01 August 2025</h2>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-10 text-align-center">
+                    <h5 class="baskervville-regular-italic">We’re thrilled to invite you to join us in beautiful Belo Horizonte, Brazil!
+                        Our wedding will be a celebration filled with love, adventure, and a blend of cultures, in the gorgeous Minas Gerais where 
+                        Fernando grew up. We envision a magical evening where traditions unite, and elegance meets the vibrant, lush beauty 
+                        of nature. For those traveling, we can provide all the information you’ll need to make your trip seamless and enjoyable. 
+                        So, pack your dancing shoes, bring your joy, and prepare to celebrate love in the most beautiful way possible!</h5>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="venue-container text-center">
+                        <img class="venue-image img-fluid mb-4" src="img/event-2.jpg" alt="Venue Location">
+                        <h4 class="venue-title mb-3">Venue Location</h4>
+                        <p class="venue-description mb-3">
+                            Belo Horizonte, Minas Gerais - Brasil
+                        </p>
+                        <p class="venue-time mb-0">Start at 15:00</p>
+                    </div>
+                </div>
+            </div>
+            
+
+
+            <div class="container py-5">
+                <!-- Section Title -->
+                <div class="section-title position-relative text-center">
+                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;"></h6>
+                    <h1 class="font-secondary display-4">Travel and Accommodations</h1>
+                    <i class="far fa-heart text-dark"></i>
+                </div>
+            
+                <!-- Introduction -->
+                <div class="row justify-content-center mb-5">
+                    <div class="col-md-10 text-center">
+                        <h5 class="baskervville-regular-italic">
+                            We know that many of you are traveling a long way to celebrate with us, 
+                            and we couldn’t be more grateful! To make planning easier, here are some 
+                            recommendations for flights, timing, and accommodations.
+                        </h5>
+                    </div>
+                </div>
+            
+                <!-- Main Content -->
+                    <div class="row g-4">
+                        <!-- Flights & Hotels Section -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-lg h-100 rounded hover-scale">
+                                <div class="overflow-hidden rounded-top">
+                                    <img class="card-img-top same-height" src="img/event-3.jpg" alt="Book Flights">
+                                </div>
+                                <div class="card-body position-relative">
+                                    <!-- Highlighted Section for Flights -->
+                                    <h4 class="card-title text-primary highlight-header">When to Book Flights?</h4>
+                                    <p class="baskervville-regular-italic">
+                                        We suggest booking flights to Belo Horizonte as early as possible to get the best rates and availability. Aim to fly into Belo Horizonte International Airport (Confins) for the most convenient access.
+                                    </p>
+                                    <hr>
+                                    
+                                    <!-- Highlighted Section for Accommodations -->
+                                    <h4 class="card-title text-primary highlight-header">Accommodations</h4>
+                                    <p class="baskervville-regular-italic">
+                                        <strong>Hotels:</strong> We can recommend options to suit everyone’s preferences. Popular neighborhoods include Savassi, Lourdes, Funcionários, Pampulha, Mangabeiras, and Floresta. If multiple guests are staying at the same hotel, we’d be happy to inquire about group discounts. Examples include Royal Golden Hotel Savassi or Holiday Inn Savassi.
+                                    </p>
+                                    <p class="baskervville-regular-italic">
+                                        <strong>Airbnbs:</strong> For a more private or group-friendly stay, there are excellent Airbnb options in the city center and near the venue, offering flexibility and comfort for all needs.
+                                    </p>
+                                    <p class="baskervville-regular-italic"">Please reach out if you’d like help finding a spot that’s perfect for you!</p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Video Section -->
+                        <div class="col-md-6">
+                            <div class="card border-0 shadow-lg h-100 rounded hover-scale">
+                                <div class="overflow-hidden rounded-top">
+                                    <video class="card-img-top same-height" autoplay loop muted>
+                                        <source src="img/bh.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="card-body position-relative p-4">
+                                    <div class="highlight-header mb-3">
+                                    <h4 class="card-title text-primary fw-bold">Belo Horizonte - Brazil</h4>
+                                    </div>
+                                    <p class="baskervville-regular-italic">
+                                        Belo Horizonte, the charming capital of Minas Gerais, Brazil, is a city that seamlessly blends tradition, 
+                                        culture, and modernity. Known affectionately as "BH," it's a place where the warmth of its people shines 
+                                        as brightly as its sunny skies. 
+                                        <p class="baskervville-regular-italic"">From the iconic Pampulha Architectural Complex, designed by Oscar Niemeyer, 
+                                        to the lively Mercado Central, filled with delicious local delicacies, Belo Horizonte offers a rich tapestry 
+                                        of experiences.</p>
+                                        <p class="baskervville-regular-italic"">The city's rolling hills and surrounding mountains provide breathtaking views, 
+                                        while its vibrant food scene, especially the famous pão de queijo and feijão tropeiro, showcases the culinary heart 
+                                        of Minas Gerais. Whether you're exploring its bustling squares, enjoying the energy of its nightlife, or venturing 
+                                        out to nearby gems like Inhotim or Ouro Preto, BH is a city that invites you to fall in love with its rhythm and charm.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+<!-- Friends & Family Start -->
+<div class="container-fluid py-5" id="family">
+    <div class="container pt-5 pb-3">
+        <!-- Section Title -->
+        <div class="section-title position-relative text-center">
+            <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Friends & Family</h6>
+            <h1 class="font-secondary display-4">Bridesmaid & Groomsmen</h1>
+            <i class="far fa-heart text-dark"></i>
+        </div>
+        <!-- Filter Buttons -->
+        <div class="row">
+            <div class="col-12 text-center mb-2">
+                <ul class="list-inline mb-4" id="portfolio-flters">
+                    <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".first">Bridesmaid</li>
+                    <li class="btn btn-outline-primary font-weight-bold m-1 py-2 px-4" data-filter=".second">Groomsmen</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Portfolio Items -->
+        <div class="row portfolio-container">
+            <!-- Groomsmen 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/groomsmen-1.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Full Name</h4>
+                        <p class="text-uppercase">Best Friend</p>
+                        <div class="d-inline-block">
+                            <!-- Social Media Links -->
+                            <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bridesmaid 1 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/bridesmaid-1.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Full Name</h4>
+                        <p class="text-uppercase">Best Friend</p>
+                        <div class="d-inline-block">
+                            <!-- Social Media Links -->
+                            <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Groomsmen 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/groomsmen-2.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Full Name</h4>
+                        <p class="text-uppercase">Best Friend</p>
+                        <div class="d-inline-block">
+                            <!-- Social Media Links -->
+                            <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bridesmaid 2 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/bridesmaid-2.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Full Name</h4>
+                        <p class="text-uppercase">Best Friend</p>
+                        <div class="d-inline-block">
+                            <!-- Social Media Links -->
+                            <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Groomsmen 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item first">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/groomsmen-3.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Full Name</h4>
+                        <p class="text-uppercase">Best Friend</p>
+                        <div class="d-inline-block">
+                            <!-- Social Media Links -->
+                            <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Bridesmaid 3 -->
+            <div class="col-lg-4 col-md-6 mb-4 portfolio-item second">
+                <div class="position-relative mb-2">
+                    <img class="img-fluid w-100" src="img/bridesmaid-3.jpg" alt="">
+                    <div class="bg-secondary text-center p-4">
+                        <h4 class="mb-3">Full Name</h4>
+                        <p class="text-uppercase">Best Friend</p>
+                        <div class="d-inline-block">
+                            <!-- Social Media Links -->
+                            <a class="mx-2" href="#"><i class="fab fa-instagram"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a class="mx-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Friends & Family End -->
+
+
+    <!-- RSVP Start -->
+    <div class="container-fluid py-5" id="rsvp">
+        <div class="container py-5">
+            <div class="section-title position-relative text-center">
+                <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">RSVP</h6>
+                <h1 class="font-secondary display-4">Join Our Special Day</h1>
+                <i class="far fa-heart text-dark"></i>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="text-center">
+                        <form action="https://formspree.io/f/mwpkqbno" method="POST">
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <input type="text" class="form-control bg-secondary border-0 py-4 px-3" name="name" placeholder="Your Name" required />
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <input type="email" class="form-control bg-secondary border-0 py-4 px-3" name="email" placeholder="Your Email" required />
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" name="guests" style="height: 52px;">
+                                        <option value="">Number of Guests</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-sm-6">
+                                    <select class="form-control bg-secondary border-0" name="attendance" style="height: 52px;">
+                                        <option value="">I'm Attending</option>
+                                        <option value="All Events">YES</option>
+                                        <option value="Wedding Party">NO</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control bg-secondary border-0 py-2 px-3" rows="5" name="message" placeholder="Message" required></textarea>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary font-weight-bold py-3 px-5" type="submit">Submit</button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- RSVP End -->
+
+        <div class="info-box">
+            <p class="baskervville-regular-italic">Come back to our site soon for details and updates on other options to see, do, eat, and more ways that we plan to celebrate 
+                as part of our big adventure with you! In the meantime, if you need any further details to plan your trip, please contact us!</p>
+        </div>
+    </div>
+
+    
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white py-5" id="contact" style="margin: -10px;"> 
+        <div class="container text-center py-5">
+            <div class="section-title position-relative text-center">
+                <h1 class="font-secondary display-3 text-white">Thank You</h1>
+                <i class="far fa-heart text-white"></i>
+            </div>
+            <div class="d-flex justify-content-center mb-4">
+                <a class="btn btn-outline-primary btn-square mr-1" href="https://www.facebook.com/fernandopena84/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-outline-primary btn-square" href="https://www.instagram.com/fernando_pena84/" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-outline-primary btn-square mr-1" href="https://www.linkedin.com/in/fernando-pena22/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                
+            </div>
+            <div class="d-flex justify-content-center py-2">
+                <p class="text-white" href="#">fernando.fepnmo@.gmail.com</p>
+                <span class="px-3">|</span>
+                <p class="text-white" href="#">+353 838 478 368 </p>
+            </div>
+            <p class="m-0">&copy; <a class="text-primary" href="#"></a>Designed by <a class="text-primary" href="">Fernando Pena</a>
+            </p>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    
+    <!-- Scroll to Bottom -->
+    <i class="fa fa-2x fa-angle-down text-white scroll-to-bottom"></i>
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-outline-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/isotope/isotope.pkgd.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script>
+        
+var nextBtn = document.querySelector('.next'),
+    prevBtn = document.querySelector('.prev'),
+    carousel = document.querySelector('.carousel'),
+    list = document.querySelector('.list'), 
+    item = document.querySelectorAll('.item'),
+    runningTime = document.querySelector('.carousel .timeRunning') 
+
+let timeRunning = 3000 
+let timeAutoNext = 7000
+
+nextBtn.onclick = function(){
+    showSlider('next')
+}
+
+prevBtn.onclick = function(){
+    showSlider('prev')
+}
+
+let runTimeOut 
+
+let runNextAuto = setTimeout(() => {
+    nextBtn.click()
+}, timeAutoNext)
+
+
+function resetTimeAnimation() {
+    runningTime.style.animation = 'none'
+    runningTime.offsetHeight /* trigger reflow */
+    runningTime.style.animation = null 
+    runningTime.style.animation = 'runningTime 7s linear 1 forwards'
+}
+
+
+function showSlider(type) {
+    let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
+    if(type === 'next'){
+        list.appendChild(sliderItemsDom[0])
+        carousel.classList.add('next')
+    } else{
+        list.prepend(sliderItemsDom[sliderItemsDom.length - 1])
+        carousel.classList.add('prev')
+    }
+
+    clearTimeout(runTimeOut)
+
+    runTimeOut = setTimeout( () => {
+        carousel.classList.remove('next')
+        carousel.classList.remove('prev')
+    }, timeRunning)
+
+
+    clearTimeout(runNextAuto)
+    runNextAuto = setTimeout(() => {
+        nextBtn.click()
+    }, timeAutoNext)
+
+    resetTimeAnimation() // Reset the running time animation
+}
+
+// Start the initial animation 
+resetTimeAnimation()
+
+    </script>
+</body>
+
+</html>
