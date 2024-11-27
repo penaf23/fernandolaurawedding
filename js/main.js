@@ -30,23 +30,37 @@
     });
 
 
-    // Modal Video
-    $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
-        });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
-    });
-
+    function playVideo() {
+        const videoContainer = document.getElementById('fullscreenVideoContainer');
+        const video = document.getElementById('fullscreenVideo');
+    
+        // Show the video container and play
+        videoContainer.style.display = 'block';
+        video.play();
+    
+        // Request fullscreen
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) { /* Safari */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE11 */
+            video.msRequestFullscreen();
+        }
+    
+        // Handle video end
+        video.onended = function () {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+    
+            // Hide the video container
+            videoContainer.style.display = 'none';
+    
+            // Redirect to the GitHub Pages homepage
+            window.location.href = 'https://penaf23.github.io/fernandolaurawedding/';
+        };
+    }
+    
 
     // Scroll to Bottom
     $(window).scroll(function () {
