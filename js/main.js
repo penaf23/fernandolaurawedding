@@ -35,17 +35,19 @@
 $(document).ready(function () {
     $('.btn-play').click(function () {
         $('#fullscreenVideoContainer').css('display', 'flex');
-        $('#fullscreenVideo')[0].play();
+        let video = $('#fullscreenVideo')[0];
+        video.currentTime = 0; // Reset video to start
+        video.play();
     });
 
     $('#fullscreenVideo').on('ended', function() {
         $('#fullscreenVideoContainer').hide();
+        // Remove window.location change - just scroll to home
         $('html, body').animate({
             scrollTop: $('#home').offset().top
         }, 1500, 'easeInOutExpo');
     });
 });
-    
 
 
     // Scroll to Bottom
