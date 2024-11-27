@@ -2,7 +2,6 @@
     "use strict";
 
     // Navbar on scrolling
-    // Definir a navbar como visível inicialmente
     $('.navbar').css('display', 'flex');
     
     $(window).scroll(function () {
@@ -29,21 +28,44 @@
         }
     });
 
+    // Video play functionality
+    function playVideo() {
+        const videoContainer = document.getElementById('fullscreenVideoContainer');
+        const video = document.getElementById('fullscreenVideo');
+        
+        // Detect if hosted on GitHub Pages
+        const baseUrl = window.location.hostname.includes('github.io')
+            ? "https://penaf23.github.io/fernandolaurawedding/"
+            : "/";
+
+        // Show the video container and play the video
+        videoContainer.style.display = 'block';
+        video.play();
+
+        // Request fullscreen mode
+        if (video.requestFullscreen) {
+            video.requestFullscreen();
+        } else if (video.webkitRequestFullscreen) { /* Safari */
+            video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) { /* IE11 */
+            video.msRequestFullscreen();
+        }
+
+        // Handle video end
+        video.onended = function () {
+            if (document.fullscreenElement) {
+                document.exitFullscreen();
+            }
+            videoContainer.style.display = 'none';
+            window.location.href = baseUrl; // Redirect to the homepage or repository URL
+        };
+    }
 
     // Modal Video
     $(document).ready(function () {
         $('.btn-play').click(function (e) {
             e.preventDefault();
-            $('#fullscreenVideoContainer').show();
-            document.getElementById('fullscreenVideo').play();
-        });
-    
-        $('#fullscreenVideo').on('ended', function() {
-            $('#fullscreenVideoContainer').hide();
-            document.getElementById('fullscreenVideo').pause();
-            $('html, body').animate({
-                scrollTop: 0
-            }, 1500);
+            playVideo();
         });
     });
 
@@ -56,7 +78,6 @@
         }
     });
 
-
     // Portfolio isotope and filter
     var portfolioIsotope = $('.portfolio-container').isotope({
         itemSelector: '.portfolio-item',
@@ -68,7 +89,6 @@
 
         portfolioIsotope.isotope({filter: $(this).data('filter')});
     });
-    
     
     // Back to top button
     $(window).scroll(function () {
@@ -83,49 +103,41 @@
         return false;
     });
 
-    let runTimeOut 
-
-    let runNextAuto = setTimeout(() => {
-        nextBtn.click()
-    }, timeAutoNext)
-    
-    
+    // Animation reset
     function resetTimeAnimation() {
-        runningTime.style.animation = 'none'
-        runningTime.offsetHeight /* trigger reflow */
-        runningTime.style.animation = null 
-        runningTime.style.animation = 'runningTime 7s linear 1 forwards'
-    }
-    
-    
-    function showSlider(type) {
-        let sliderItemsDom = list.querySelectorAll('.carousel .list .item')
-        if(type === 'next'){
-            list.appendChild(sliderItemsDom[0])
-            carousel.classList.add('next')
-        } else{
-            list.prepend(sliderItemsDom[sliderItemsDom.length - 1])
-            carousel.classList.add('prev')
+        const runningTime = document.querySelector('.carousel .timeRunning');
+        if (runningTime) {
+            runningTime.style.animation = 'none';
+            runningTime.offsetHeight; /* trigger reflow */
+            runningTime.style.animation = null;
+            runningTime.style.animation = 'runningTime 7s linear 1 forwards';
         }
-    
-        clearTimeout(runTimeOut)
-    
-        runTimeOut = setTimeout( () => {
-            carousel.classList.remove('next')
-            carousel.classList.remove('prev')
-        }, timeRunning)
-    
-    
-        clearTimeout(runNextAuto)
-        runNextAuto = setTimeout(() => {
-            nextBtn.click()
-        }, timeAutoNext)
-    
-        resetTimeAnimation() // Reset the running time animation
     }
-    
-    // Start the initial animation 
-    resetTimeAnimation()
+
+    // Carousel navigation
+    function showSlider(type) {
+        const list = document.querySelector('.carousel .list');
+        const carousel = document.querySelector('.carousel');
+        const sliderItemsDom = list.querySelectorAll('.item');
+
+        if (type === 'next') {
+            list.appendChild(sliderItemsDom[0]);
+            carousel.classList.add('next');
+        } else {
+            list.prepend(sliderItemsDom[sliderItemsDom.length - 1]);
+            carousel.classList.add('prev');
+        }
+
+        setTimeout(() => {
+            carousel.classList.remove('next');
+            carousel.classList.remove('prev');
+        }, 3000);
+
+        resetTimeAnimation();
+    }
+
+    // Start the initial animation
+    resetTimeAnimation();
 
     // Gallery carousel
     $(".gallery-carousel").owlCarousel({
@@ -133,27 +145,17 @@
         smartSpeed: 1500,
         dots: false,
         loop: true,
-        nav : true,
-        navText : [
+        nav: true,
+        navText: [
             '<i class="fa fa-angle-left" aria-hidden="true"></i>',
             '<i class="fa fa-angle-right" aria-hidden="true"></i>'
         ],
         responsive: {
-            0:{
-                items:1
-            },
-            576:{
-                items:2
-            },
-            768:{
-                items:3
-            },
-            992:{
-                items:4
-            },
-            1200:{
-                items:5
-            }
+            0: { items: 1 },
+            576: { items: 2 },
+            768: { items: 3 },
+            992: { items: 4 },
+            1200: { items: 5 }
         }
     });
     
