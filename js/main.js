@@ -31,23 +31,21 @@
 
 
     // Modal Video
-// Video handling
-$(document).ready(function () {
-    $('.btn-play').click(function () {
-        $('#fullscreenVideoContainer').css('display', 'flex');
-        let video = $('#fullscreenVideo')[0];
-        video.currentTime = 0; // Reset video to start
-        video.play();
-    });
+    $(document).ready(function () {
+        var $videoSrc;
+        $('.btn-play').click(function () {
+            $videoSrc = $(this).data("src");
+        });
+        console.log($videoSrc);
 
-    $('#fullscreenVideo').on('ended', function() {
-        $('#fullscreenVideoContainer').hide();
-        // Remove window.location change - just scroll to home
-        $('html, body').animate({
-            scrollTop: $('#home').offset().top
-        }, 1500, 'easeInOutExpo');
+        $('#videoModal').on('shown.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
+        })
+
+        $('#videoModal').on('hide.bs.modal', function (e) {
+            $("#video").attr('src', $videoSrc);
+        })
     });
-});
 
 
     // Scroll to Bottom
@@ -161,4 +159,3 @@ $(document).ready(function () {
     });
     
 })(jQuery);
-
