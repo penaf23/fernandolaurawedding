@@ -32,21 +32,20 @@
 
     // Modal Video
     $(document).ready(function () {
-        var $videoSrc;
-        $('.btn-play').click(function () {
-            $videoSrc = $(this).data("src");
+        $('.btn-play').click(function (e) {
+            e.preventDefault();
+            $('#fullscreenVideoContainer').show();
+            document.getElementById('fullscreenVideo').play();
         });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
+    
+        $('#fullscreenVideo').on('ended', function() {
+            $('#fullscreenVideoContainer').hide();
+            document.getElementById('fullscreenVideo').pause();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 1500);
+        });
     });
-
 
     // Scroll to Bottom
     $(window).scroll(function () {
