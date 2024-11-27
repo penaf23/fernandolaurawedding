@@ -33,19 +33,25 @@
     // Modal Video
     $(document).ready(function () {
         var $videoSrc;
+    
+        // Store video source when play button is clicked
         $('.btn-play').click(function () {
             $videoSrc = $(this).data("src");
+            $('#video').attr('src', $videoSrc + "?autoplay=1&modestbranding=1&showinfo=0");
         });
-        console.log($videoSrc);
-
-        $('#videoModal').on('shown.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc + "?autoplay=1&amp;modestbranding=1&amp;showinfo=0");
-        })
-
-        $('#videoModal').on('hide.bs.modal', function (e) {
-            $("#video").attr('src', $videoSrc);
-        })
+    
+        // Close modal and reset video when modal is hidden
+        $('#videoModal').on('hide.bs.modal', function () {
+            $('#video').attr('src', '');
+        });
+    
+        // Scroll back to homepage when video ends
+        $('#video').on('ended', function () {
+            $('#videoModal').modal('hide');
+            $('html, body').animate({ scrollTop: $('#home').offset().top }, 1500, 'easeInOutExpo');
+        });
     });
+    
 
 
     // Scroll to Bottom
