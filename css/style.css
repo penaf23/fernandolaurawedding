@@ -4862,7 +4862,13 @@ input[type="button"].btn-block {
   align-items: center;
   justify-content: space-between;
 }
-
+.navbar .nav-link img {
+  height: 18px; /* Ajuste conforme o tamanho da sua navbar */
+  width: auto;
+  vertical-align: middle;
+  margin-right: 5px; /* Espaçamento se você quiser texto ao lado ou entre bandeiras */
+  border-radius: 2px; /* Cantos levemente arredondados */
+}
 .navbar-brand {
   display: inline-block;
   padding-top: 0.3125rem;
